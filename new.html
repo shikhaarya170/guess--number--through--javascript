@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>how many fingers I am holding up?</p>
+  <p><input type="text" id="guess"><button id="checkguess">guess!</button></p>
+ 
+  
+
+   <script>
+    // alert (Math.floor(Math.random()*10+1))
+
+    document.getElementById("checkguess").onclick = function(){
+       var randomNumber = Math.random();
+    //   console.log(randomNumber);
+    //   document.write(randomNumber);
+     randomNumber = randomNumber*6;
+    // console.log(randomNumber);
+      randomNumber =  Math.floor(randomNumber);
+
+      if (document.getElementById("guess").value == randomNumber)
+      {
+      alert("Well done! u have got it");
+
+    } else {
+
+        alert("Nope! The number was" + randomNumber )
+    }
+    }
+   </script> 
+</body>
+</html>
